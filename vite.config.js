@@ -5,4 +5,9 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  server: {
+    allowedHosts: [
+        'communicate-hotel-societies-oct.trycloudflare.com'
+    ]
+  }
 })

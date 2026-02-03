@@ -3,10 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/images/directory.png" type="image/x-icon">
   <link rel="stylesheet" href="./src/style.css">
-  <title>Document</title>
+  <title>Real-time User Directory</title>
 </head>
-<body>
-  <h1 class="bg-red-500">prakash</h1>
+<body class="bg-linear-to-br from-slate-700 to-black min-h-screen text-white">
+
+  <h1 class="text-center font-semibold text-3xl pt-4"> Real-Time User Directory</h1>
+
+  <div class="max-w-3xl flex mx-auto justify-center items-center gap-3">
+    <input type="text" id="searchinput" class="border w-full p-2 mt-4 bg-gray-700 rounded shadow" placeholder="Search by name">
+    <select  id="selectrole" class="border p-2 mt-4 rounded">
+      <option class="text-black" value="all">All</option>
+      <option class="text-black" value="Developer">Developer</option>
+      <option class="text-black" value="Designer">Designer</option>
+      <option class="text-black" value="HR">HR</option>
+    </select>
+  </div>
+
+  <!--user list-->
+
+  <div class="max-w-3xl grid grid-cols-2 md:grid-cols-3 gap-3 mt-3 mx-auto" id="userlist">
+
+    
+
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
