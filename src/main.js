@@ -8,28 +8,28 @@ const userData = [
     role: "Developer",
     email: "mprakash@gmail.com",
     contact: 9876543210,
-    image: "/src/images/maledp.jpeg",
+    image: "/images/maledp.jpeg",
   },
   {
     name: "dhanush",
     role: "Designer",
     email: "dhanush@gmail.com",
     contact: 9876543210,
-    image: "/src/images/maledp.jpeg",
+    image: "/images/maledp.jpeg",
   },
   {
     name: "pavitra",
     role: "Developer",
     email: "pavitra@gmail.com",
     contact: 9876543210,
-    image: "/src/images/femaledp.jpg",
+    image: "/images/femaledp.jpg",
   },
   {
     name: "kavin",
     role: "HR",
     email: "kavin@gmail.com",
     contact: 9876543210,
-    image: "/src/images/maledp.jpeg",
+    image: "/images/maledp.jpeg",
   },
 ];
 
@@ -46,6 +46,7 @@ userData.forEach((userdata)=>{
 
     const cardEl=document.createElement("div")
     cardEl.innerHTML=`<div class="bg-white p-3 rounded shadow flex flex-col justify-center items-center">
+    
       <img src=${userdata.image} class="h-32 w-32 object-cover rounded-full border-2 border-gray-700">
       <h1 class="font-bold text-black text-lg">${userdata.name}</h1>
       <h1 class="font-semibold text-gray-700 text-lg">${userdata.role}</h1>
